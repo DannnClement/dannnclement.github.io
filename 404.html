@@ -51,8 +51,10 @@
 			<img src="/assets/img/portrait.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href=""></a></h1>
+		  <h1 class="header-author"><a href="">Clement</a></h1>
 		</hgroup>
+		
+		<p class="header-subtitle">你好，幸会！</p>
 		
 
 		<nav class="header-menu">
@@ -113,8 +115,10 @@
 				<img src="/assets/img/portrait.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author"></h1>
+			  <h1 class="header-author js-header-author">Clement</h1>
 			</hgroup>
+			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>你好，幸会！<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -569,6 +573,32 @@
 
 	
 	
+<section id="comments" class="comments">
+  <style>
+    .comments{margin:30px;padding:10px;background:#fff}
+    @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+  </style>
+  <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "3t8XvFXBtub3pJCyDQpiK77B-gzGzoHsz",
+            app_key: "kJuookvcluLxjKFt4jdLrEq2",
+            placeholder: "ヾﾉ≧∀≦)o欢迎评论!",
+            avatar:"robohash"
+        });
+    }
+</script>
+  </section>
+
+	
   
   
   
@@ -791,7 +821,7 @@ MathJax.Hub.Queue(function() {
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">既然选择了远方，便只顾风雨兼程。</div>
   	  	
     	</section>
     
